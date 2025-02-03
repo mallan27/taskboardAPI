@@ -1,0 +1,55 @@
+# .NET
+bin/
+obj/
+
+# VSCode
+.vscode/
+
+# SQLite
+*.db
+*.sqlite
+*.db-shm
+*.db-wal
+
+# User-specific files
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.json
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# macOS
+.DS_Store
+
+# Linux
+*.swp
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Debug symbols
+*.pdb
+
+# Visual Studio
+.vs/
+
+# Code coverage
+*.coverage
+
+# NuGet packages
+*.nupkg
+
+#httpfiles
+*.http
+
+# Ignore migration files
+**/Migrations/
+
