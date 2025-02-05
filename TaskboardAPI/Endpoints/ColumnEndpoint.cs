@@ -12,11 +12,6 @@ public static class ColumnEndpoint
         var group = app.MapGroup("column")
                   .WithParameterValidation();
 
-        group.MapGet("/", (ApplicationContext context) =>
-        {
-            return context.Columns;
-        });
-
         group.MapGet("/{boardId}", (int boardId, ApplicationContext context) =>
          {
              var columns = context.Columns.Where(c => c.BoardId == boardId).ToList();

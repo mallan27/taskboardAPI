@@ -12,11 +12,6 @@ public static class CardEndpoint
         var group = app.MapGroup("card")
                   .WithParameterValidation();
 
-        group.MapGet("/", (ApplicationContext context) =>
-        {
-            return context.Cards;
-        }
-        );
 
         group.MapGet("/{columnId}", (int columnId, ApplicationContext context) =>
          {

@@ -12,10 +12,7 @@ public static class BoardEndpoint
         var group = app.MapGroup("board")
                   .WithParameterValidation();
 
-        group.MapGet("/", (ApplicationContext context) =>
-        {
-            return context.Boards;
-        });
+
 
         group.MapGet("/{id}", (int id, ApplicationContext context) =>
         {
